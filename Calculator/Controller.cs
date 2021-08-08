@@ -16,7 +16,7 @@ namespace Calculator
             Console.WriteLine("Please enter your choice:");
             int menuInput = int.Parse(Console.ReadLine());
             
-            //to be added to Arithmetic.cs
+            //Checks for user input, choses function based off input
             if (menuInput == 1)
             {
                 Arithmetic.Addition();
@@ -24,20 +24,18 @@ namespace Calculator
             }
             if (menuInput == 2)
             {
-                Console.Clear();
-                Console.WriteLine("Subtraction has been selected");
+                Arithmetic.Subtraction();
 
             }
             if (menuInput == 3)
             {
-                Console.Clear();
-                Console.WriteLine("Division has been selected");
+
+                Arithmetic.Division();
 
             }
             if (menuInput == 4)
             {
-                Console.Clear();
-                Console.WriteLine("Multiplication has been selected");
+                Arithmetic.Multiplication();
 
             }
             if (menuInput == 5)
@@ -46,7 +44,5 @@ namespace Calculator
             }
 
         }
-    
-
     }
 }
