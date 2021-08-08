@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace Calculator
 {
-    class Class1
+    class Colour
     {
+
     }
 }
