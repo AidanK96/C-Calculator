@@ -13,22 +13,22 @@ namespace Calculator
         public static void Addition(int x, int y)
         {
             int sum = (x + y);
-            Console.WriteLine("Sum of numbers - " + sum);
+            Console.WriteLine("Sum of numbers = " + sum);
         }
         public static void Subtraction(int x, int y)
         {
             int sum = (x - y);
-            Console.WriteLine("Sum of numbers - " + sum);
+            Console.WriteLine("Sum of numbers = " + sum);
         }
         public static void Division(int x, int y)
         {
             int sum = (x / y);
-            Console.WriteLine("Sum of numbers - " + sum);          
+            Console.WriteLine("Sum of numbers = " + sum);          
         }
         public static void Multiplication(int x, int y)
         {
             int sum = (x * y);
-            Console.WriteLine("Sum of numbers - " + sum);
+            Console.WriteLine("Sum of numbers = " + sum);
         }
     }
 }

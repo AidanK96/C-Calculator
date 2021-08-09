@@ -6,6 +6,10 @@ using System.Threading.Tasks;
 
 namespace Calculator
 {
+    /**
+     * The purpose of this class is to display the text to the console, take in the user input, class the arithmetic fucntion and then display the output.
+     * Error handling is currently only in the subtraction function at this time.
+     **/
     class ConsoleText
     {
         public static void menuText()
@@ -38,16 +42,20 @@ namespace Calculator
             Console.WriteLine("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
             Console.WriteLine("Subtraction has been selected");
             Console.WriteLine("Enter first number");
+            //Make below error handling into own function
             String input1 = Console.ReadLine();
             bool sucess = int.TryParse(input1, out x);
             if (sucess)
             {
-                Console.WriteLine("Enetered number 1 = " + x);
+                Console.WriteLine("Entered number 1 = " + x);
             }
             else
             {
-                Console.WriteLine("Incorrect integer format");
+                Console.WriteLine("Incorrect integer format, keypress to return to start");
+                Console.ReadKey();
+                subText();
             }
+
             Console.WriteLine("Enter second number");
             String input2 = Console.ReadLine();
             bool sucess2 = int.TryParse(input2, out y);
@@ -57,8 +65,9 @@ namespace Calculator
             }
             else
             {
-                Console.WriteLine("Incorrect integer format");
-                Console.ReadLine();
+                Console.WriteLine("Incorrect integer format, keypress to return to start");
+                Console.Read();
+                subText();
             }
             Arithmetic.Subtraction(x, y);
         }

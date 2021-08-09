@@ -35,7 +35,6 @@ namespace Calculator
             {
                 Environment.Exit(0);
             }
-
         }
     }
 }
