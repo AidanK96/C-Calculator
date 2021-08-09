@@ -14,16 +14,42 @@ namespace Calculator
     {
         public static void menuText()
         {
-            Console.WriteLine("~~~~~~~~~~~~~~~~||Calculator||~~~~~~~~~~~~~~~~\nPress 1 for addition\nPress 1 for addition\nPress 2 for subtraction\nPress 3 for division" +
+            Console.WriteLine("~~~~~~~~~~~~~~~~||Calculator||~~~~~~~~~~~~~~~~\nPress 1 for addition\nPress 2 for subtraction\nPress 3 for division" +
                 "\nPress 4 for multiplication\nPress 5 to exit\nPlease enter your choice:");
         }
         public static void addText()
         {
+            int x;
+            int y;
             Console.Clear();
             Console.WriteLine("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\nAddition has been selected\nEnter first number ");
-            int x = int.Parse(Console.ReadLine());
+            String input1 = Console.ReadLine();
+            bool sucess = int.TryParse(input1, out x);
+            if
+            (sucess)
+            {
+                Console.WriteLine("First number = " + x);
+            }
+            else
+            {
+                Console.WriteLine("Incorrect integer format, keypress to return to start");
+                Console.ReadKey();
+                addText();
+            }
+
             Console.WriteLine("Enter second number");
-            int y = int.Parse(Console.ReadLine());
+            String input2 = Console.ReadLine();
+            bool sucess2 = int.TryParse(input2, out y);
+            if (sucess2)
+            {
+                Console.WriteLine("Second number = " + y);
+            }
+            else
+            {
+                Console.WriteLine("Incorrect integer format, keypress to return to start");
+                Console.Read();
+                addText();
+            }
             Arithmetic.Addition(x, y);
         }
         public static void subText()
@@ -63,21 +89,70 @@ namespace Calculator
         }
         public static void divText()
         {
+            int x;
+            int y;
             Console.Clear();
             Console.WriteLine("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\nDivision has been selected\nEnter first number");
-            int x = int.Parse(Console.ReadLine());
+            String input1 = Console.ReadLine();
+            bool sucess = int.TryParse(input1, out x);
+            if (sucess)
+            {
+                Console.WriteLine("First number = " + x);
+            }
+            else
+            {
+                Console.WriteLine("Incorrect integer format, keypress to return to start");
+                Console.ReadKey();
+                divText();
+            }
+
             Console.WriteLine("Enter second number");
-            int y = int.Parse(Console.ReadLine());
+            String input2 = Console.ReadLine();
+            bool sucess2 = int.TryParse(input2, out y);
+            if (sucess2)
+            {
+                Console.WriteLine("Second number = " + y);
+            }
+            else
+            {
+                Console.WriteLine("Incorrect integer format, keypress to return to start");
+                Console.Read();
+                divText();
+            }
             Arithmetic.Division(x, y);
         }
         public static void multiText()
         {
+            int x;
+            int y;
             Console.Clear();
             Console.WriteLine("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\nMultiplication has been selected\nEnter first number");
-            int x = int.Parse(Console.ReadLine());
+            String input1 = Console.ReadLine();
+            bool sucess = int.TryParse(input1, out x);
+            if (sucess)
+            {
+                Console.WriteLine("First number = " + x);
+            }
+            else
+            {
+                Console.WriteLine("Incorrect integer format, keypress to return to start");
+                Console.ReadKey();
+                multiText();
+            }
+
             Console.WriteLine("Enter second number");
-            int y = int.Parse(Console.ReadLine());
-            Arithmetic.Multiplication(x, y);
+            String input2 = Console.ReadLine();
+            bool sucess2 = int.TryParse(input2, out y);
+            if (sucess2)
+            {
+                Console.WriteLine("Second number = " + y);
+            }
+            else
+            {
+                Console.WriteLine("Incorrect integer format, keypress to return to start");
+                Console.Read();
+                multiText();
+            }
         }
     }
 }

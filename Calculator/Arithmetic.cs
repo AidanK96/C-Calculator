@@ -9,7 +9,7 @@ namespace Calculator
     class Arithmetic
     {
 
-        public bool sucess = true;
+        
         public static void Addition(int x, int y)
         {
             int sum = (x + y);
