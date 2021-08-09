@@ -8,51 +8,25 @@ namespace Calculator
 {
     class Arithmetic
     {
-        public static void Addition()
+
+        public bool sucess = true;
+        public static void Addition(int x, int y)
         {
-            Console.Clear();
-            Console.WriteLine("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
-            Console.WriteLine("Addition has been selected");
-            Console.WriteLine("Enter first number");
-            int x = int.Parse(Console.ReadLine());
-            Console.WriteLine("Enter second number");
-            int y = int.Parse(Console.ReadLine());
             int sum = (x + y);
             Console.WriteLine("Sum of numbers - " + sum);
         }
-        public static void Subtraction()
+        public static void Subtraction(int x, int y)
         {
-            Console.Clear();
-            Console.WriteLine("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
-            Console.WriteLine("Subtraction has been selected");
-            Console.WriteLine("Enter first number");
-            int x = int.Parse(Console.ReadLine());
-            Console.WriteLine("Enter second number");
-            int y = int.Parse(Console.ReadLine());
             int sum = (x - y);
             Console.WriteLine("Sum of numbers - " + sum);
         }
-        public static void Division()
+        public static void Division(int x, int y)
         {
-            Console.Clear();
-            Console.WriteLine("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
-            Console.WriteLine("Division has been selected");
-            Console.WriteLine("Enter first number");
-            int x = int.Parse(Console.ReadLine());
-            Console.WriteLine("Enter second number");
-            int y = int.Parse(Console.ReadLine());
             int sum = (x / y);
-            Console.WriteLine("Sum of numbers - " + sum);
+            Console.WriteLine("Sum of numbers - " + sum);          
         }
-        public static void Multiplication()
+        public static void Multiplication(int x, int y)
         {
-            Console.Clear();
-            Console.WriteLine("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
-            Console.WriteLine("Multiplication has been selected");
-            Console.WriteLine("Enter first number");
-            int x = int.Parse(Console.ReadLine());
-            Console.WriteLine("Enter second number");
-            int y = int.Parse(Console.ReadLine());
             int sum = (x * y);
             Console.WriteLine("Sum of numbers - " + sum);
         }
