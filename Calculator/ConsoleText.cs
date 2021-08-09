@@ -14,21 +14,13 @@ namespace Calculator
     {
         public static void menuText()
         {
-            Console.WriteLine("~~~~~~~~~~~~~~~~||Calculator||~~~~~~~~~~~~~~~~");
-            Console.WriteLine("Press 1 for addition");
-            Console.WriteLine("Press 2 for subtraction");
-            Console.WriteLine("Press 3 for division");
-            Console.WriteLine("Press 4 for multiplication");
-            Console.WriteLine("Press 5 to exit");
-            Console.WriteLine("Please enter your choice:");
-            
+            Console.WriteLine("~~~~~~~~~~~~~~~~||Calculator||~~~~~~~~~~~~~~~~\nPress 1 for addition\nPress 1 for addition\nPress 2 for subtraction\nPress 3 for division" +
+                "\nPress 4 for multiplication\nPress 5 to exit\nPlease enter your choice:");
         }
         public static void addText()
         {
             Console.Clear();
-            Console.WriteLine("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
-            Console.WriteLine("Addition has been selected");
-            Console.WriteLine("Enter first number");
+            Console.WriteLine("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\nAddition has been selected\nEnter first number ");
             int x = int.Parse(Console.ReadLine());
             Console.WriteLine("Enter second number");
             int y = int.Parse(Console.ReadLine());
@@ -39,15 +31,13 @@ namespace Calculator
             int x;
             int y;
             Console.Clear();
-            Console.WriteLine("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
-            Console.WriteLine("Subtraction has been selected");
-            Console.WriteLine("Enter first number");
+            Console.WriteLine("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\nSubtraction has been selected\nEnter first number");
             //Make below error handling into own function
             String input1 = Console.ReadLine();
             bool sucess = int.TryParse(input1, out x);
             if (sucess)
             {
-                Console.WriteLine("Entered number 1 = " + x);
+                Console.WriteLine("First number = " + x);
             }
             else
             {
@@ -61,7 +51,7 @@ namespace Calculator
             bool sucess2 = int.TryParse(input2, out y);
             if (sucess2)
             {
-                Console.WriteLine("Number 2 = " + y);
+                Console.WriteLine("Second number = " + y);
             }
             else
             {
@@ -74,9 +64,7 @@ namespace Calculator
         public static void divText()
         {
             Console.Clear();
-            Console.WriteLine("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
-            Console.WriteLine("Division has been selected");
-            Console.WriteLine("Enter first number");
+            Console.WriteLine("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\nDivision has been selected\nEnter first number");
             int x = int.Parse(Console.ReadLine());
             Console.WriteLine("Enter second number");
             int y = int.Parse(Console.ReadLine());
@@ -85,9 +73,7 @@ namespace Calculator
         public static void multiText()
         {
             Console.Clear();
-            Console.WriteLine("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
-            Console.WriteLine("Multiplication has been selected");
-            Console.WriteLine("Enter first number");
+            Console.WriteLine("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\nMultiplication has been selected\nEnter first number");
             int x = int.Parse(Console.ReadLine());
             Console.WriteLine("Enter second number");
             int y = int.Parse(Console.ReadLine());
